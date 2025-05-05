@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <h1>Detalle de {{ patient.name }}</h1>
+  <ul>
+    <li><strong>Nombre:</strong> {{ patient.name }}</li>
+    <li><strong>Fecha nacimiento:</strong> {{ patient.birth_date }}</li>
+    <li><strong>Edad:</strong> {{ patient.age }}</li>
+    <li><strong>Sexo:</strong> {{ patient.gender }}</li>
+    <li><strong>Tipo de sangre:</strong> {{ patient.blood_type }}</li>
+    <li><strong>Alergias:</strong> {{ patient.allergies }}</li>
+    <li><strong>Condiciones médicas:</strong> {{ patient.medical_conditions }}</li>
+  </ul>
+{% endblock %}
